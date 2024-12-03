@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CAFH',
-  tagline: 'ADC É BARIL',
+  tagline: 'ADC É BARIl',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -77,7 +77,7 @@ const config = {
             position: 'left',
             label: 'Classes',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/classes', label: 'classes', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
