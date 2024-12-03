@@ -77,7 +77,7 @@ const config = {
             position: 'left',
             label: 'Classes',
           },
-          {to: '/classes/classes.md', label: 'classes', position: 'left'},
+          {to: '/classes', label: 'classes', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
