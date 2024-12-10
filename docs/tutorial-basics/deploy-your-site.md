@@ -1,31 +1,15 @@
 ---
 sidebar_position: 5
 ---
+ 
+# Manutenção do Sistema
+ 
+## Funcionalidades
+ 
+- Realizar backups periódicos dos dados da biblioteca.
+- Restaurar dados a partir de backups.
+- Monitorar e otimizar o desempenho do sistema.
+- Notificar sobre livros extraviados ou inconsistências.
+- Garantir que o sistema funcione de maneira eficiente.
 
-# Deploy your site
-
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
-
-It builds your site as simple **static HTML, JavaScript and CSS files**.
-
-## Build your site
-
-Build your site **for production**:
-
-```bash
-npm run build
-```
-
-The static files are generated in the `build` folder.
-
-## Deploy your site
-
-Test your production build locally:
-
-```bash
-npm run serve
-```
-
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+tem menu de contexto
