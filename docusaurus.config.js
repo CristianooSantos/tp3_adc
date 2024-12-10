@@ -79,7 +79,7 @@ const config = {
           },
           {to: '/docs/classes', label: 'classes', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CristianooSantos/tp3_adc',
             label: 'GitHub',
             position: 'right',
           },
@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/CristianooSantos/tp3_adc',
               },
             ],
           },
