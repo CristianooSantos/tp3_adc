@@ -90,7 +90,6 @@ const config = {
         links: [
           {
             title: 'Community',
-            position: 'absolute',
             items: [
               {
                 label: 'Stack Overflow',
