@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
  
-## Módulos e Classes ([Voltar para a Home](Livros))
- 
 ### Livro
 
 A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte, atualize e exclua informações sobre os livros, além de possibilitar verificar a disponibilidade de cada um.
