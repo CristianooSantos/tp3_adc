@@ -57,3 +57,8 @@
 .navbar__item {
   animation: fadeIn 1s ease-in-out;
 }
+
+.hover-logo:hover {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
