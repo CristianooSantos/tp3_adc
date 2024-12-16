@@ -56,23 +56,28 @@ A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte,
 ### Exemplo de Utilização
 
 - **Criando um novo livro**
-
+```bash
     livro = Livro("978-3-16-148410-0", "O Hobbit", "J.R.R. Tolkien", "Fantasia")
     livro.salvar()
+```
 
 - **Listando todos os livros**
-
+```bash
     Livro.listar_todos()
+```
 
 - **Atualizando um livro**
-
+```bash
     livro.titulo = "O Senhor dos Anéis"
     livro.atualizar()
+```
 
 - **Verificando a disponibilidade de um livro**
-
+```bash
     livro.verificar_disponibilidade()
+```
 
 - **Excluindo um livro**
-
+```bash
     livro.deletar()
+```
