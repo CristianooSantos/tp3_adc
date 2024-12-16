@@ -62,22 +62,22 @@ A classe Emprestimo gere os empréstimos de livros, permitindo que registe, cons
 ## Exemplo de Utilização
 
 ### Criando um novo empréstimo
-\`\`\`bash
+\`\`\`
 emprestimo = Emprestimo("978-3-16-148410-0", "12345", "98765")
 emprestimo.salvar()
 \`\`\`
 
 ### Listando todos os empréstimos
-\`\`\`bash
+\`\`\`
 Emprestimo.listar_todos()
 \`\`\`
 
 ### Salvando os empréstimos num ficheiro
-\`\`\`bash
+\`\`\`
 Emprestimo.salvar_em_arquivo("emprestimos.dat")
 \`\`\`
 
 ### Carregando os empréstimos de um ficheiro
-\`\`\`bash
+\`\`\`
 Emprestimo.carregar_de_arquivo("emprestimos.dat")
 \`\`\`
