@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
  
-## Módulos e Classes ([Voltar para a Home](Home))
+## Módulos e Classes ([Voltar para a Home](Livros))
  
 ### Livro
 
