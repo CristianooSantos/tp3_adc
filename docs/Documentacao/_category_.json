@@ -1,8 +1,8 @@
 {
-  "label": "Funcionalidades",
+  "label": "Classes",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Descrição da funcionalidade de todas as funções."
+    "description": "Descrição das Classes e das suas funções implementadas"
   }
 }
