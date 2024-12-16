@@ -69,6 +69,11 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
+          style: {
+            width: '150px',
+            transition: 'transform 0.3s ease, filter 0.3s ease',
+          },
+          className: 'hover-logo',
         },
         items: [
           {

@@ -28,3 +28,8 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.hover-logo:hover {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
