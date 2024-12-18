@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Sobre Nós
 
 Bem-vindo ao nosso TP3 de ADC! 😄✌️  
