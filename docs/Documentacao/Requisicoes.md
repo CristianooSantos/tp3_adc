@@ -6,7 +6,8 @@ sidebar_position: 4
 
 A classe `Emprestimo` gere os empréstimos de livros, permitindo que registe, consulte, atualize e exclua informações relacionadas com os empréstimos, além de possibilitar salvar e carregar os dados a partir de ficheiros binários.
 
-#### Atributos Principais:
+#### **Atributos Principais**
+
 - **`emprestimos`**: Dicionário que armazena todos os empréstimos registados, com IDs únicos como chave.
 - **`contador_emprestimos`**: Contador sequencial que gera IDs únicos para os empréstimos.
 - **`isbn_livro`**: ISBN do livro emprestado.
@@ -15,7 +16,8 @@ A classe `Emprestimo` gere os empréstimos de livros, permitindo que registe, co
 - **`data_emprestimo`**: Data em que o empréstimo foi realizado.
 - **`data_devolucao`**: Data prevista para devolução do livro.
 
-#### Métodos Principais:
+#### **Métodos Principais**
+
 - **`\_\_init\_\_(self, isbn_livro, numero_leitor, id_funcionario, data_emprestimo=None, data_devolucao=None)`**:
   Inicializa um novo objeto Emprestimo, atribuindo um ID único e definindo as informações sobre o empréstimo.
 
@@ -37,7 +39,8 @@ A classe `Emprestimo` gere os empréstimos de livros, permitindo que registe, co
 - **`carregar_de_arquivo(arquivo)`**:
   Carrega empréstimos de um ficheiro binário previamente salvo, restaurando os dados no sistema.
 
-#### Descrição Detalhada dos Métodos
+#### **Descrição Detalhada dos Métodos**
+
 - **`\_\_init\_\_`**:
   Este método construtor inicializa um novo empréstimo, recebendo como parâmetros o ISBN do livro, o número do leitor, o ID do funcionário e, opcionalmente, as datas do empréstimo e devolução.
 
@@ -59,25 +62,29 @@ A classe `Emprestimo` gere os empréstimos de livros, permitindo que registe, co
 - **`carregar_de_arquivo(arquivo)`**:
   Lê e carrega os dados dos empréstimos a partir de um ficheiro binário. Se o ficheiro não existir, exibe uma mensagem de erro.
 
-### Exemplo de Utilização
+### **Exemplo de Utilização**
 
 **Criando um novo empréstimo**
+
 ```bash
 emprestimo = Emprestimo("978-3-16-148410-0", "12345", "98765")
 emprestimo.salvar()
 ```
 
 **Listando todos os empréstimos**
+
 ```bash
 Emprestimo.listar_todos()
 ```
 
 **Salvando os empréstimos num ficheiro**
+
 ```bash
 Emprestimo.salvar_em_arquivo("emprestimos.dat")
 ```
 
 **Carregando os empréstimos de um ficheiro**
+
 ```bash
 Emprestimo.carregar_de_arquivo("emprestimos.dat")
 ```

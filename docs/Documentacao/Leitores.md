@@ -8,7 +8,7 @@ A classe `Leitor` gere as informações dos leitores da biblioteca, permitindo a
 
 ---
 
-### **Atributos Principais**:
+### **Atributos Principais**
 
 - `numero_leitor`: Número identificador único do leitor.  
 - `nome`: Nome do leitor.  
@@ -18,7 +18,7 @@ A classe `Leitor` gere as informações dos leitores da biblioteca, permitindo a
 
 ---
 
-### **Métodos Principais**:
+### **Métodos Principais**
 
 - `__init__(self, numero_leitor, nome, email, telefone)`  
   Inicializa um novo objeto `Leitor`, atribuindo um número identificador e as informações principais sobre o leitor.  
