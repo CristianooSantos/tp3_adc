@@ -2,10 +2,22 @@
 sidebar_position: 2
 ---
 
+# Livro
 
 A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte, atualize e exclua informações sobre os livros, além de possibilitar verificar a disponibilidade de cada um.
 
-#### **Atributos Principais**
+---
+
+## Índice
+
+- [Atributos Principais](#atributos-principais)
+- [Métodos Principais](#métodos-principais)
+- [Descrição Detalhada dos Métodos](#descrição-detalhada-dos-métodos)
+- [Exemplo de Utilização](#exemplo-de-utilização)
+
+---
+
+## **Atributos Principais**
 
 - `isbn`: ISBN do livro.
 - `titulo`: Título do livro.
@@ -13,7 +25,9 @@ A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte,
 - `categoria`: Categoria do livro.
 - `disponibilidade`: Indica se o livro está disponível ou emprestado.
 
-#### **Métodos Principais**
+---
+
+## **Métodos Principais**
 
 - `__init__(self, isbn, titulo, autor, categoria, disponibilidade=True)`:  
   Inicializa um novo objeto `Livro`, atribuindo as informações principais sobre o livro.
@@ -33,7 +47,9 @@ A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte,
 - `verificar_disponibilidade(self)`:  
   Verifica se o livro está disponível para empréstimo.
 
-#### **Descrição Detalhada dos Métodos**
+---
+
+## **Descrição Detalhada dos Métodos**
 
 - **`__init__`**:  
   Este método construtor inicializa um novo livro, recebendo como parâmetros o ISBN, título, autor, categoria e, opcionalmente, a disponibilidade (que por padrão é `True`, indicando que o livro está disponível).
@@ -53,36 +69,12 @@ A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte,
 - **`verificar_disponibilidade()`**:  
   Verifica se o livro está disponível para empréstimo, retornando `True` se estiver disponível e `False` caso contrário.
 
-### **Exemplo de Utilização**
+---
 
-- **Criando um novo livro**
+## **Exemplo de Utilização**
 
-```bash
-    livro = Livro("978-3-16-148410-0", "O Hobbit", "J.R.R. Tolkien", "Fantasia")
-    livro.salvar()
-```
+### Criando um novo livro
 
-- **Listando todos os livros**
-
-```bash
-    Livro.listar_todos()
-```
-
-- **Atualizando um livro**
-
-```bash
-    livro.titulo = "O Senhor dos Anéis"
-    livro.atualizar()
-```
-
-- **Verificando a disponibilidade de um livro**
-
-```bash
-    livro.verificar_disponibilidade()
-```
-
-- **Excluindo um livro**
-
-```bash
-    livro.deletar()
-```
+```python
+livro = Livro("978-3-16-148410-0", "O Hobbit", "J.R.R. Tolkien", "Fantasia")
+livro.salvar()
