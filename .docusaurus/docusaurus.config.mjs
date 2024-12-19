@@ -4,19 +4,20 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
+  "title": "CAFH",
+  "tagline": "ADC É BARIl",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-test-site.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://github.com",
+  "baseUrl": "/tp3_adc/",
+  "organizationName": "CristianooSantos",
+  "projectName": "tp3_adc",
+  "deploymentBranch": "gh-pages",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
-    "defaultLocale": "en",
+    "defaultLocale": "pt",
     "locales": [
-      "en"
+      "pt"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -26,7 +27,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/masaleiro/Code/UAlg/docusaurus-ghpages/sidebars.js",
+          "sidebarPath": "C:\\Users\\admin\\Documents\\tp3_adc\\sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -34,7 +35,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/masaleiro/Code/UAlg/docusaurus-ghpages/src/css/custom.css"
+          "customCss": "C:\\Users\\admin\\Documents\\tp3_adc\\src\\css\\custom.css"
         }
       }
     ]
@@ -42,7 +43,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "My Site",
+      "title": "Biblioteca CAFH",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
@@ -52,15 +53,15 @@ export default {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Tutorial"
+          "label": "Documentação"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
+          "to": "/aboutUs",
+          "label": "About Us",
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/CristianooSantos/tp3_adc",
           "label": "GitHub",
           "position": "right"
         }
@@ -70,15 +71,6 @@ export default {
     "footer": {
       "style": "dark",
       "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
         {
           "title": "Community",
           "items": [
@@ -95,22 +87,9 @@ export default {
               "href": "https://twitter.com/docusaurus"
             }
           ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
         }
       ],
-      "copyright": "Copyright © 2023 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {

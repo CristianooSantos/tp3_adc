@@ -12,4 +12,4 @@ Somos o Cristiano, o Francisco, o Henrique e o Afonso.
 
 <Carousel />
 
-![Foto De Grupo](images/grupo_chill.png)
+![Foto De Grupo](/img/grupo_chill.png)
