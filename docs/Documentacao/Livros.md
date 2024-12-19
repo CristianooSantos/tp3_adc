@@ -6,17 +6,6 @@ sidebar_position: 2
 
 A classe `Livro` gere os livros da biblioteca, permitindo que registe, consulte, atualize e exclua informações sobre os livros, além de possibilitar verificar a disponibilidade de cada um.
 
----
-
-## Índice
-
-- [Atributos Principais](#atributos-principais)
-- [Métodos Principais](#métodos-principais)
-- [Descrição Detalhada dos Métodos](#descrição-detalhada-dos-métodos)
-- [Exemplo de Utilização](#exemplo-de-utilização)
-
----
-
 ## **Atributos Principais**
 
 - `isbn`: ISBN do livro.
