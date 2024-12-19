@@ -6,6 +6,8 @@ sidebar_position: 5
 
 A `manutenção do sistema` é crucial para garantir que a biblioteca funcione de maneira eficiente e que os dados estejam sempre protegidos e acessíveis. Aqui estão algumas das principais funcionalidades de manutenção do sistema:
 
+---
+
 ## **Funcionalidades**
 
 ### **Realizar backups periódicos dos dados da biblioteca**
