@@ -8,15 +8,6 @@ A classe `Emprestimo` gere os empréstimos de livros, permitindo que registe, co
 
 ---
 
-## Índice
-
-- [Atributos Principais](#atributos-principais)
-- [Métodos Principais](#métodos-principais)
-- [Descrição Detalhada dos Métodos](#descrição-detalhada-dos-métodos)
-- [Exemplo de Utilização](#exemplo-de-utilização)
-
----
-
 ## **Atributos Principais**
 
 - **`emprestimos`**: Dicionário que armazena todos os empréstimos registados, com IDs únicos como chave.
