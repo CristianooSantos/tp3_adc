@@ -1,23 +1,96 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* Hero Banner Styles */
 .heroBanner {
-  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: #fff;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Fade-in animation for elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.heroBanner h1 {
+  animation: fadeIn 1s ease-out;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
+
+.heroBanner p {
+  animation: fadeIn 1.5s ease-out;
+  font-size: 1.5rem;
+}
+
+/* Button hover effects */
+.buttons .button--lg {
+  animation: fadeIn 2s ease-out;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff758c;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.buttons .button--lg:hover {
+  transform: scale(1.1);
+  background-color: #ff758c;
+  color: #fff;
+}
+
+/* Feature Cards */
+.featureCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.featureCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.featureCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.featureCard h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  color: #555;
+}
+

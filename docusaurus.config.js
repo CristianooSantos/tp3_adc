@@ -77,8 +77,6 @@ const config = {
             position: 'left',
             label: 'Documentação',
           },
-          {to: '/docs/aboutUs', label: 'About Us', position: 'left'},
-          {to: '/livraria', label: 'Livraria', position: 'left'},
           {
             href: 'https://github.com/CristianooSantos/tp3_adc',
             label: 'GitHub',

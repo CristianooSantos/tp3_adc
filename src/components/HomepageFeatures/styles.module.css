@@ -1,53 +1,48 @@
 .features {
-  background-color: #f9fafb;
-  padding: 50px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .featureCard {
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
   padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Light shadow for the 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+  height: 100%; /* Ensure cards have consistent height */
 }
 
 .featureCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg); /* Slight tilt and lift */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
 .featureSvg {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  fill: black;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px; /* Space between icon and text */
 }
 
-.featureSvg:hover {
-  transform: scale(1.1);
-}
-
-h3 {
-  font-size: 1.5rem;
-  color: #333;
+.card__header {
   margin-bottom: 15px;
+}
+
+.card__body h3 {
+  font-size: 1.25rem;
   font-weight: bold;
+  color: #2c3e50;
 }
 
-p {
-  color: #666;
+.card__body p {
   font-size: 1rem;
-  line-height: 1.5;
+  color: #34495e;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .col--4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
