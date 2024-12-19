@@ -77,12 +77,6 @@ const config = {
             position: 'left',
             label: 'Documentação',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'livrariaSidebar',
-            position: 'left',
-            label: 'Biblioteca',
-          },
           {to: '/docs/aboutUs', label: 'About Us', position: 'left'},
           {to: '/livraria', label: 'Livraria', position: 'left'},
           {
