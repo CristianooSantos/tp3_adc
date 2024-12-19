@@ -98,6 +98,11 @@ export default [
     exact: true
   },
   {
+    path: '/tp3_adc/livraria',
+    component: ComponentCreator('/tp3_adc/livraria', 'eb6'),
+    exact: true
+  },
+  {
     path: '/tp3_adc/markdown-page',
     component: ComponentCreator('/tp3_adc/markdown-page', 'fc6'),
     exact: true

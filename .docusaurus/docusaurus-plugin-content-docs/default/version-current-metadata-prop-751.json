@@ -17,6 +17,12 @@
         "items": [
           {
             "type": "link",
+            "label": "Leitores",
+            "href": "/tp3_adc/docs/Documentacao/Leitores",
+            "docId": "Documentacao/Leitores"
+          },
+          {
+            "type": "link",
             "label": "Livro",
             "href": "/tp3_adc/docs/Documentacao/Livros",
             "docId": "Documentacao/Livros"
@@ -38,12 +44,6 @@
             "label": "Manutenção do Sistema",
             "href": "/tp3_adc/docs/Documentacao/Manutencao",
             "docId": "Documentacao/Manutencao"
-          },
-          {
-            "type": "link",
-            "label": "Leitores",
-            "href": "/tp3_adc/docs/Documentacao/Leitores",
-            "docId": "Documentacao/Leitores"
           }
         ],
         "href": "/tp3_adc/docs/category/classes"
@@ -60,7 +60,7 @@
     "Documentacao/Leitores": {
       "id": "Documentacao/Leitores",
       "title": "Leitores",
-      "description": "Módulos e Classes (Voltar para a Home)",
+      "description": "A classe Leitor gere as informações dos leitores da biblioteca, permitindo adicionar, consultar, atualizar e excluir leitores.",
       "sidebar": "tutorialSidebar"
     },
     "Documentacao/Livros": {

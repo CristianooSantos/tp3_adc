@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/tp3_adc/docs",
-          "mainDocId": "Documentacao/Livros",
+          "mainDocId": "Documentacao/Leitores",
           "docs": [
             {
               "id": "Documentacao/Funcionarios",

@@ -45,7 +45,7 @@
   "/tp3_adc/aboutUs-4bc": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---tp-3-adc-markdown-page-9-f-5-1ee"
+      "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
     },
     "content": "content---tp-3-adc-about-us-9-ff-648"
   },
@@ -186,10 +186,17 @@
     "sidebar": "sidebar---tp-3-adc-blog-814-d96",
     "content": "content---tp-3-adc-blog-welcomed-9-f-340"
   },
+  "/tp3_adc/livraria-eb6": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
+    },
+    "content": "content---tp-3-adc-livrariaede-249"
+  },
   "/tp3_adc/markdown-page-fc6": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---tp-3-adc-markdown-page-9-f-5-1ee"
+      "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
     },
     "content": "content---tp-3-adc-markdown-page-393-9a9"
   },
@@ -227,7 +234,7 @@
   "/tp3_adc/-a79": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---tp-3-adc-markdown-page-9-f-5-1ee"
+      "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
     },
     "config": "config---tp-3-adc-5-e-9-760"
   }
