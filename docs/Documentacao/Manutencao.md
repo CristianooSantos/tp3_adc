@@ -8,18 +8,6 @@ A `manutenção do sistema` é crucial para garantir que a biblioteca funcione d
 
 ---
 
-## Índice
-
-- [Funcionalidades](#funcionalidades)
-  - [Realizar backups periódicos dos dados da biblioteca](#realizar-backups-periódicos-dos-dados-da-biblioteca)
-  - [Restaurar dados a partir de backups](#restaurar-dados-a-partir-de-backups)
-  - [Monitorar e otimizar o desempenho do sistema](#monitorar-e-otimizar-o-desempenho-do-sistema)
-  - [Notificar sobre livros extraviados ou inconsistências](#notificar-sobre-livros-extraviados-ou-inconsistências)
-  - [Garantir que o sistema funcione de maneira eficiente](#garantir-que-o-sistema-funcione-de-maneira-eficiente)
-- [Exemplo de Utilização](#exemplo-de-utilização)
-
----
-
 ## **Funcionalidades**
 
 ### **Realizar backups periódicos dos dados da biblioteca**

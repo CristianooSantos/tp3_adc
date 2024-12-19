@@ -1,8 +1,8 @@
+---
+sidebar_position: 1
+---
+
 # Leitores
-
-## Módulos e Classes (**Voltar para a Home**)
-
-### Leitor
 
 A classe `Leitor` gere as informações dos leitores da biblioteca, permitindo adicionar, consultar, atualizar e excluir leitores.
 
