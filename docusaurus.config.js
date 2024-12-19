@@ -79,11 +79,12 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'livrariaSidebar',
             position: 'left',
             label: 'Biblioteca',
           },
           {to: '/docs/aboutUs', label: 'About Us', position: 'left'},
+          {to: '/livraria', label: 'Livraria', position: 'left'},
           {
             href: 'https://github.com/CristianooSantos/tp3_adc',
             label: 'GitHub',
