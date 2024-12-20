@@ -555,10 +555,9 @@
         "source": "@site/src/pages/index.tsx"
       },
       {
-        "type": "mdx",
+        "type": "jsx",
         "permalink": "/tp3_adc/livraria",
-        "source": "@site/src/pages/livraria.md",
-        "frontMatter": {}
+        "source": "@site/src/pages/livraria.tsx"
       },
       {
         "type": "mdx",

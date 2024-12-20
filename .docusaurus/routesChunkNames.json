@@ -186,12 +186,12 @@
     "sidebar": "sidebar---tp-3-adc-blog-814-d96",
     "content": "content---tp-3-adc-blog-welcomed-9-f-340"
   },
-  "/tp3_adc/livraria-eb6": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+  "/tp3_adc/livraria-ced": {
+    "__comp": "__comp---site-src-pages-livraria-tsxe-42-efb",
     "__context": {
       "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
     },
-    "content": "content---tp-3-adc-livrariaede-249"
+    "config": "config---tp-3-adc-livraria-5-e-9-2e2"
   },
   "/tp3_adc/markdown-page-fc6": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
@@ -236,6 +236,6 @@
     "__context": {
       "plugin": "plugin---tp-3-adc-about-us-9-f-5-def"
     },
-    "config": "config---tp-3-adc-5-e-9-760"
+    "config": "config---tp-3-adc-livraria-5-e-9-2e2"
   }
 }

@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/tp3_adc/livraria',
-    component: ComponentCreator('/tp3_adc/livraria', 'eb6'),
+    component: ComponentCreator('/tp3_adc/livraria', 'ced'),
     exact: true
   },
   {
