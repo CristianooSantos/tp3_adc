@@ -26,6 +26,12 @@ function Book({ title, author, description, image }: { title: string; author: st
         padding: '1rem',
         borderRadius: '8px',
         margin: '0.5rem',
+        width: '300px',
+        height: '450px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         transformStyle: 'preserve-3d',
         transition: 'transform 0.3s ease-in-out',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -39,13 +45,13 @@ function Book({ title, author, description, image }: { title: string; author: st
         (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
       }}
     >
-      <div className="card__image">
-        <img src={image} alt={title} style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }} />
+      <div className="card__image" style={{ width: '100%', height: '65%' }}>
+        <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
       </div>
-      <div className="card__body">
-        <h3>{title}</h3>
-        <p><strong>Autor:</strong> {author}</p>
-        <p>{description}</p>
+      <div className="card__body" style={{ textAlign: 'center', padding: '0.5rem' }}>
+        <h3 style={{ margin: '0.5rem 0', fontSize: '1.2rem' }}>{title}</h3>
+        <p style={{ margin: '0.2rem 0', fontSize: '1rem' }}><strong>Autor:</strong> {author}</p>
+        <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#aaa' }}>{description}</p>
       </div>
     </div>
   );
@@ -102,7 +108,7 @@ function LibraryBooks() {
       <div className="container">
         <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
           {books.map((book, idx) => (
-            <div key={idx} style={{ flex: '0 0 30%', boxSizing: 'border-box' }}>
+            <div key={idx} style={{ margin: '1rem', display: 'flex', justifyContent: 'center' }}>
               <Book {...book} />
             </div>
           ))}
