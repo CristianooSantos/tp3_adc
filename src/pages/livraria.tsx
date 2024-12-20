@@ -128,9 +128,9 @@ function LibraryBooks() {
   return (
     <section className={styles.booksSection}>
       <div className="container">
-        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
           {books.map((book, idx) => (
-            <div key={idx} style={{ margin: '1rem', display: 'flex', justifyContent: 'center', width: '33%' }}>
+            <div key={idx} style={{ margin: '1rem', display: 'flex', justifyContent: 'center', flex: '0 0 calc(33.33% - 2rem)' }}>
               <Book {...book} onClick={() => openModal(book)} />
             </div>
           ))}
