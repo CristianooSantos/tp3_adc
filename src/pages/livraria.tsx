@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import styles from './index.module.css';
+import styles from './livraria.module.css';
 
 function HighlightRow() {
   const { siteConfig } = useDocusaurusContext();
@@ -21,7 +21,7 @@ function Book({ title, author, description, image, onClick }: { title: string; a
     <div
       className={clsx('card', styles.bookCard)}
       style={{
-        backgroundColor: '#2c2c2c',
+        backgroundColor: '#821694',
         color: '#fff',
         padding: '0.8rem',
         borderRadius: '8px',
@@ -136,8 +136,6 @@ function LibraryBooks() {
           ))}
         </div>
       </div>
-
-      {/* Modal para exibir a descrição do livro */}
       {isModalOpen && selectedBook && (
         <div
           style={{
