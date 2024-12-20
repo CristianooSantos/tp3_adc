@@ -56,13 +56,13 @@ export default {
           "label": "Documentação"
         },
         {
-          "to": "/aboutUs",
-          "label": "About Us",
+          "to": "/livraria",
+          "label": "Livraria",
           "position": "left"
         },
         {
-          "to": "/livraria",
-          "label": "Livraria",
+          "to": "/aboutUs",
+          "label": "Sobre Nós",
           "position": "left"
         },
         {
