@@ -18,7 +18,27 @@ function HighlightRow() {
 
 function Book({ title, author, description, image }: { title: string; author: string; description: string; image: string }) {
   return (
-    <div className={clsx('card', styles.bookCard)} style={{ backgroundColor: '#2c2c2c', color: '#fff', padding: '1rem', borderRadius: '8px', margin: '0.5rem' }}>
+    <div
+      className={clsx('card', styles.bookCard)}
+      style={{
+        backgroundColor: '#2c2c2c',
+        color: '#fff',
+        padding: '1rem',
+        borderRadius: '8px',
+        margin: '0.5rem',
+        transformStyle: 'preserve-3d',
+        transition: 'transform 0.3s ease-in-out',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      }}
+      onMouseEnter={(e) => {
+        (e.currentTarget as HTMLElement).style.transform = 'scale(1.05) rotateX(10deg) rotateY(10deg)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.3)';
+      }}
+      onMouseLeave={(e) => {
+        (e.currentTarget as HTMLElement).style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      }}
+    >
       <div className="card__image">
         <img src={image} alt={title} style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }} />
       </div>
@@ -37,43 +57,43 @@ function LibraryBooks() {
       title: 'Harry Potter e a Pedra Filosofal',
       author: 'J.K. Rowling',
       description: 'O início da jornada mágica de Harry Potter em Hogwarts.',
-      image: '/img/harry1.jpg',
+      image: '/img/harry-potter-1.jpg',
     },
     {
       title: 'Harry Potter e a Câmara Secreta',
       author: 'J.K. Rowling',
       description: 'Harry descobre segredos sombrios em Hogwarts.',
-      image: '/img/harry2.jpg',
+      image: '/img/harry-potter-2.jpg',
     },
     {
       title: 'Harry Potter e o Prisioneiro de Azkaban',
       author: 'J.K. Rowling',
       description: 'Uma aventura cheia de mistérios envolvendo Sirius Black.',
-      image: '/img/harry3.jpg',
+      image: '/img/harry-potter-3.jpg',
     },
     {
       title: 'Harry Potter e o Cálice de Fogo',
       author: 'J.K. Rowling',
       description: 'Harry participa no perigoso Torneio Tribruxo.',
-      image: '/img/harry4.jpg',
+      image: '/img/harry-potter-4.jpg',
     },
     {
       title: 'Harry Potter e a Ordem da Fênix',
       author: 'J.K. Rowling',
       description: 'A resistência contra Lord Voldemort ganha força.',
-      image: '/img/harry5.jpg',
+      image: '/img/harry-potter-5.jpg',
     },
     {
       title: 'Harry Potter e o Enigma do Príncipe',
       author: 'J.K. Rowling',
       description: 'Segredos do passado de Voldemort são revelados.',
-      image: '/img/harry6.jpg',
+      image: '/img/harry-potter-6.jpg',
     },
     {
       title: 'Harry Potter e as Relíquias da Morte',
       author: 'J.K. Rowling',
       description: 'A batalha final entre Harry e Voldemort.',
-      image: '/img/harry7.jpg',
+      image: '/img/harry-potter-7.jpg',
     },
   ];
 
