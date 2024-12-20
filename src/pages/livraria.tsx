@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
- 
+
 function HighlightRow() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -15,8 +15,8 @@ function HighlightRow() {
     </div>
   );
 }
- 
-function Book({ title, author, description, image }: { title: string; author: string; description: string; image: string }) {
+
+function Book({ title, author, description, image, onClick }: { title: string; author: string; description: string; image: string; onClick: () => void }) {
   return (
     <div
       className={clsx('card', styles.bookCard)}
@@ -44,6 +44,7 @@ function Book({ title, author, description, image }: { title: string; author: st
         (e.currentTarget as HTMLElement).style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
         (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
       }}
+      onClick={onClick}
     >
       <div className="card__image" style={{ width: '100%', height: '75%' }}>
         <img
@@ -52,7 +53,7 @@ function Book({ title, author, description, image }: { title: string; author: st
           style={{
             width: '100%',
             height: '100%',
-            objectFit: 'contain', // Alterado para evitar corte da imagem
+            objectFit: 'contain',
             borderRadius: '4px',
           }}
         />
@@ -60,12 +61,11 @@ function Book({ title, author, description, image }: { title: string; author: st
       <div className="card__body" style={{ textAlign: 'center', padding: '0.5rem' }}>
         <h3 style={{ margin: '0.5rem 0', fontSize: '1rem' }}>{title}</h3>
         <p style={{ margin: '0.2rem 0', fontSize: '0.9rem' }}><strong>Autor:</strong> {author}</p>
-        <p style={{ margin: '0.2rem 0', fontSize: '0.8rem', color: '#aaa' }}>{description}</p>
       </div>
     </div>
   );
 }
- 
+
 function LibraryBooks() {
   const books = [
     {
@@ -111,22 +111,83 @@ function LibraryBooks() {
       image: require('@site/static/img/harry7.jpg').default,
     },
   ];
- 
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedBook, setSelectedBook] = useState<any>(null);
+
+  const openModal = (book: any) => {
+    setSelectedBook(book);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedBook(null);
+  };
+
   return (
     <section className={styles.booksSection}>
       <div className="container">
         <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
           {books.map((book, idx) => (
             <div key={idx} style={{ margin: '1rem', display: 'flex', justifyContent: 'center', width: '33%' }}>
-              <Book {...book} />
+              <Book {...book} onClick={() => openModal(book)} />
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal para exibir a descrição do livro */}
+      {isModalOpen && selectedBook && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 9999,
+          }}
+          onClick={closeModal}
+        >
+          <div
+            style={{
+              backgroundColor: '#fff',
+              padding: '2rem',
+              borderRadius: '8px',
+              maxWidth: '500px',
+              width: '100%',
+              boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3>{selectedBook.title}</h3>
+            <p><strong>Autor:</strong> {selectedBook.author}</p>
+            <p>{selectedBook.description}</p>
+            <button
+              onClick={closeModal}
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: '#007bff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+              }}
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
- 
+
 export default function Library(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -141,5 +202,3 @@ export default function Library(): JSX.Element {
     </Layout>
   );
 }
- 
- 
