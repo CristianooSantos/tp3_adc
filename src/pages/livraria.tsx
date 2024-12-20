@@ -16,7 +16,7 @@ function HighlightRow() {
   );
 }
 
-function Book({ title, author, description, image, onClick }: { title: string; author: string; description: string; image: string; onClick: () => void }) {
+function Book({ title, author, description, image, onClick }) {
   return (
     <div
       className={clsx('card', styles.bookCard)}
@@ -37,12 +37,12 @@ function Book({ title, author, description, image, onClick }: { title: string; a
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLElement).style.transform = 'scale(1.05) rotateX(10deg) rotateY(10deg)';
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.3)';
+        (e.currentTarget).style.transform = 'scale(1.05) rotateX(10deg) rotateY(10deg)';
+        (e.currentTarget).style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.3)';
       }}
       onMouseLeave={(e) => {
-        (e.currentTarget as HTMLElement).style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        (e.currentTarget).style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
+        (e.currentTarget).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
       }}
       onClick={onClick}
     >
@@ -72,48 +72,58 @@ function LibraryBooks() {
       title: 'Harry Potter e a Pedra Filosofal',
       author: 'J.K. Rowling',
       description: 'O início da jornada mágica de Harry Potter em Hogwarts.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry1.jpg').default,
     },
     {
       title: 'Harry Potter e a Câmara Secreta',
       author: 'J.K. Rowling',
       description: 'Harry descobre segredos sombrios em Hogwarts.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry2.jpg').default,
     },
     {
       title: 'Harry Potter e o Prisioneiro de Azkaban',
       author: 'J.K. Rowling',
       description: 'Uma aventura cheia de mistérios envolvendo Sirius Black.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry3.jpg').default,
     },
     {
       title: 'Harry Potter e o Cálice de Fogo',
       author: 'J.K. Rowling',
       description: 'Harry participa no perigoso Torneio Tribruxo.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry4.jpg').default,
     },
     {
       title: 'Harry Potter e a Ordem da Fênix',
       author: 'J.K. Rowling',
       description: 'A resistência contra Lord Voldemort ganha força.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry5.jpg').default,
     },
     {
       title: 'Harry Potter e o Enigma do Príncipe',
       author: 'J.K. Rowling',
       description: 'Segredos do passado de Voldemort são revelados.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry6.jpg').default,
     },
     {
       title: 'Harry Potter e as Relíquias da Morte',
       author: 'J.K. Rowling',
       description: 'A batalha final entre Harry e Voldemort.',
+      genre: 'Fantasia',
       image: require('@site/static/img/harry7.jpg').default,
     },
   ];
 
+  const [selectedGenre, setSelectedGenre] = useState<string>('Todos');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedBook, setSelectedBook] = useState<any>(null);
+
+  const genres = ['Todos', ...Array.from(new Set(books.map((book) => book.genre)))];
 
   const openModal = (book: any) => {
     setSelectedBook(book);
@@ -125,11 +135,47 @@ function LibraryBooks() {
     setSelectedBook(null);
   };
 
+  const filteredBooks = selectedGenre === 'Todos' ? books : books.filter((book) => book.genre === selectedGenre);
+
   return (
     <section className={styles.booksSection}>
       <div className="container">
+      <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
+  {genres.map((genre, idx) => (
+    <button
+      key={idx}
+      onClick={() => setSelectedGenre(genre)}
+      style={{
+        margin: '0.5rem',
+        padding: '0.6rem 1.2rem',
+        backgroundColor: selectedGenre === genre ? '#ff69b4' : '#f0f0f0',
+        color: selectedGenre === genre ? '#fff' : '#333',
+        border: '1px solid #ccc',
+        borderRadius: '20px',
+        cursor: 'pointer',
+        fontSize: '1rem',
+        boxShadow: selectedGenre === genre
+          ? '0 4px 6px rgba(0, 0, 0, 0.2)'
+          : '0 2px 4px rgba(0, 0, 0, 0.1)',
+        transition: 'all 0.3s ease-in-out',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = selectedGenre === genre ? '#ff69b4' : '#e6e6e6';
+        e.currentTarget.style.boxShadow = '0 6px 8px rgba(0, 0, 0, 0.2)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = selectedGenre === genre ? '#ff69b4' : '#f0f0f0';
+        e.currentTarget.style.boxShadow = selectedGenre === genre
+          ? '0 4px 6px rgba(0, 0, 0, 0.2)'
+          : '0 2px 4px rgba(0, 0, 0, 0.1)';
+      }}
+    >
+      {genre}
+    </button>
+  ))}
+</div>
         <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
-          {books.map((book, idx) => (
+          {filteredBooks.map((book, idx) => (
             <div key={idx} style={{ margin: '1rem', display: 'flex', justifyContent: 'center', flex: '0 0 calc(33.33% - 2rem)' }}>
               <Book {...book} onClick={() => openModal(book)} />
             </div>
