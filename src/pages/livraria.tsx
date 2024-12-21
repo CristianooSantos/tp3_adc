@@ -454,7 +454,14 @@ function LibraryBooks() {
         description: 'Uma epidemia de cegueira súbita atinge uma cidade inteira, e a obra explora como a humanidade lida com o caos e a perda de significado em uma sociedade fragmentada.',
         genre: 'Ficção Existencial',
         image: require('@site/static/img/ensaio_sobre_a_cegueira.jpg').default,
-    },   
+    },
+    {
+      title: 'O Estranho Caso do Cão Morto',
+      author: 'Mark Haddon',
+      description: 'Christopher Boone, um garoto de 15 anos com síndrome de Asperger, investiga a morte de um cachorro no jardim de seu vizinho. Durante sua investigação, ele acaba descobrindo verdades desconcertantes sobre sua própria família, o que o leva a enfrentar questões existenciais sobre identidade, amor e a natureza da realidade.',
+      genre: 'Ficção existencial',
+      image: require('@site/static/img/o_estranho_caso_do_cao_morto.jpg').default,
+    },       
     {
       title: 'A Revolução dos Bichos',
       author: 'George Orwell',
