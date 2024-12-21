@@ -264,6 +264,28 @@ function LibraryBooks() {
       genre: 'Ficção Científica',
       image: require('@site/static/img/fundacao.jpg').default,
     },
+    {
+      title: 'O Silêncio dos Inocentes',
+      author: 'Thomas Harris',
+      description: 'A investigação sombria de um assassino em série com a ajuda de um psiquiatra psicopata.',
+      genre: 'Mistério',
+      image: require('@site/static/img/silencio_inocentes.jpg').default,
+    },
+    {
+      title: 'O Assassinato no Expresso do Oriente',
+      author: 'Agatha Christie',
+      description: 'Hercule Poirot investiga um crime misterioso a bordo de um luxuoso comboio.',
+      genre: 'Mistério',
+      image: require('@site/static/img/expresso_oriente.jpg').default,
+    },
+    {
+      title: 'O Nome da Rosa',
+      author: 'Umberto Eco',
+      description: 'Um monge desvenda mistérios num mosteiro medieval.',
+      genre: 'Mistério',
+      image: require('@site/static/img/nome_rosa.jpg').default,
+    },
+    
   ];
 
   const [selectedGenre, setSelectedGenre] = useState<string>('Todos');
