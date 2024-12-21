@@ -118,6 +118,13 @@ function LibraryBooks() {
       image: require('@site/static/img/harry7.jpg').default,
     },
     {
+      title: 'As Mentiras de Locke Lamora',
+      author: 'Scott Lynch',
+      description: 'Locke Lamora, o líder dos notórios "Gentleman Bastards", é um mestre do roubo e da enganação. Em uma cidade dominada por gangues e poderosos, Locke e sua equipe planejam o maior golpe de suas vidas, mas acabam se envolvendo em uma trama muito mais perigosa e complexa do que imaginavam.',
+      genre: 'Fantasia',
+      image: require('@site/static/img/locke_lamora.jpg').default,
+    },    
+    {
       title: '1984',
       author: 'George Orwell',
       description: 'Uma distopia sombria sobre vigilância e controle governamental.',
