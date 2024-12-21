@@ -434,7 +434,41 @@ function LibraryBooks() {
       genre: 'Mistério',
       image: require('@site/static/img/nome_rosa.jpg').default,
     },
-    
+    {
+      title: 'A Garota com a Tatuagem de Dragão',
+      author: 'Stieg Larsson',
+      description: 'Um jornalista e uma hacker unem forças para resolver um desaparecimento de décadas.',
+      genre: 'Mistério',
+      image: require('@site/static/img/garota_tatuagem.jpg').default,
+    },
+    {
+      title: 'O Homem de Giz',
+      author: 'C.J. Tudor',
+      description: 'Um grupo de amigos é assombrado por eventos do passado quando desenhos de giz começam a reaparecer.',
+      genre: 'Mistério',
+      image: require('@site/static/img/homem_giz.jpg').default,
+    },
+    {
+      title: 'A Verdade sobre o Caso Harry Quebert',
+      author: 'Joël Dicker',
+      description: 'Um jovem escritor investiga o envolvimento de seu mentor em um assassinato.',
+      genre: 'Mistério',
+      image: require('@site/static/img/harry_quebert.jpg').default,
+    },
+    {
+      title: 'Sherlock Holmes: O Cão dos Baskervilles',
+      author: 'Arthur Conan Doyle',
+      description: 'Holmes e Watson investigam a lenda de uma fera sobrenatural aterrorizando uma família nobre.',
+      genre: 'Mistério',
+      image: require('@site/static/img/cao_baskervilles.jpg').default,
+    },
+    {
+      title: 'A Paciente Silenciosa',
+      author: 'Alex Michaelides',
+      description: 'Uma mulher que cometeu um crime brutal permanece em silêncio, enquanto um terapeuta tenta desvendar seu segredo.',
+      genre: 'Mistério',
+      image: require('@site/static/img/paciente_silenciosa.jpg').default,
+    },
   ];
 
   const [selectedGenre, setSelectedGenre] = useState<string>('Todos');
