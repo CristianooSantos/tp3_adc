@@ -378,6 +378,42 @@ function LibraryBooks() {
       image: require('@site/static/img/fundacao.jpg').default,
     },
     {
+      title: '2001: Uma Odisseia no Espaço',
+      author: 'Arthur C. Clarke',
+      description: 'Uma jornada épica pelo espaço que explora a evolução da humanidade e o papel da inteligência artificial.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/2001_odisseia.jpg').default,
+    },
+    {
+      title: 'O Fim da Infância',
+      author: 'Arthur C. Clarke',
+      description: 'Uma reflexão sobre o impacto de uma raça alienígena benevolente na evolução humana.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/fim_infancia.jpg').default,
+    },
+    {
+      title: 'Fahrenheit 451',
+      author: 'Ray Bradbury',
+      description: 'Um futuro distópico onde os livros são proibidos e queimados para controlar o pensamento.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/fahrenheit451.jpg').default,
+    },
+    {
+      title: 'O Homem do Castelo Alto',
+      author: 'Philip K. Dick',
+      description: 'Uma realidade alternativa onde os Aliados perderam a Segunda Guerra Mundial, explorando temas de opressão e identidade.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/homem_castelo_alto.jpg').default,
+    },
+    {
+      title: 'A Máquina do Tempo',
+      author: 'H.G. Wells',
+      description: 'A história de um cientista que viaja para um futuro distante e descobre os destinos da humanidade.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/maquina_tempo.jpg').default,
+    },
+    
+    {
       title: 'O Silêncio dos Inocentes',
       author: 'Thomas Harris',
       description: 'A investigação sombria de um assassino em série com a ajuda de um psiquiatra psicopata.',
