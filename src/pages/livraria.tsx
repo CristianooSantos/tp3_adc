@@ -187,6 +187,27 @@ function LibraryBooks() {
       genre: 'Clássico',
       image: require('@site/static/img/dom_quixote.jpg').default,
     },
+    {
+      title: 'Duna',
+      author: 'Frank Herbert',
+      description: 'Uma saga épica sobre política, religião e ecologia num planeta desértico.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/duna.jpg').default,
+    },
+    {
+      title: 'Neuromancer',
+      author: 'William Gibson',
+      description: 'Um clássico cyberpunk que explora o futuro da tecnologia e da inteligência artificial.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/neuromancer.jpg').default,
+    },
+    {
+      title: 'Fundação',
+      author: 'Isaac Asimov',
+      description: 'A luta para preservar o conhecimento humano diante da queda de um império galáctico.',
+      genre: 'Ficção Científica',
+      image: require('@site/static/img/fundacao.jpg').default,
+    },
   ];
 
   const [selectedGenre, setSelectedGenre] = useState<string>('Todos');
