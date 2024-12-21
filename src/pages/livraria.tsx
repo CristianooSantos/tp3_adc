@@ -293,13 +293,6 @@ function LibraryBooks() {
       image: require('@site/static/img/revolucao_bichos.jpg').default,
     },
     {
-      title: '1984',
-      author: 'George Orwell',
-      description: 'Um olhar distópico sobre o totalitarismo e a vigilância.',
-      genre: 'Fábula Política',
-      image: require('@site/static/img/1984.jpg').default,
-    },
-    {
       title: 'Admirável Mundo Novo',
       author: 'Aldous Huxley',
       description: 'Uma crítica ao controle social e à busca pela perfeição.',
@@ -314,25 +307,11 @@ function LibraryBooks() {
       image: require('@site/static/img/conto_da_aia.jpg').default,
     },
     {
-      title: 'Fahrenheit 451',
-      author: 'Ray Bradbury',
-      description: 'Uma reflexão sobre a censura e a importância da liberdade intelectual.',
-      genre: 'Fábula Política',
-      image: require('@site/static/img/fahrenheit_451.jpg').default,
-    },
-    {
       title: 'A Peste',
       author: 'Albert Camus',
       description: 'Uma alegoria sobre a luta da humanidade contra o absurdo e a opressão.',
       genre: 'Fábula Política',
       image: require('@site/static/img/a_peste.jpg').default,
-    },
-    {
-      title: 'O Processo',
-      author: 'Franz Kafka',
-      description: 'Um conto surreal sobre burocracia, culpa e opressão.',
-      genre: 'Fábula Política',
-      image: require('@site/static/img/o_processo.jpg').default,
     },
     {
       title: 'Laranja Mecânica',
