@@ -12,61 +12,61 @@ A classe `Funcionario` gere as informações dos funcionários da biblioteca, pe
 
 ## Métodos Principais
 
-### `__init__(self, id_funcionario, nome, cargo, data_admissao)`
+#### `__init__(self, id_funcionario, nome, cargo, data_admissao)`
 
 Inicializa um novo objeto `Funcionario`, atribuindo um ID único e as informações principais sobre o funcionário.
 
-### `salvar(self)`
+#### `salvar(self)`
 
 Adiciona o funcionário ao sistema, registando suas informações.
 
-### `atualizar(self)`
+#### `atualizar(self)`
 
 Atualiza as informações de um funcionário existente.
 
-### `deletar(self)`
+#### `deletar(self)`
 
 Exclui o funcionário do sistema.
 
-### `listar_todos()`
+#### `listar_todos()`
 
 Lista todos os funcionários registados no sistema, mostrando informações como nome, cargo e data de admissão.
 
-### `atribuir_funcoes(self, funcoes)`
+#### `atribuir_funcoes(self, funcoes)`
 
 Atribui funções ou responsabilidades a um funcionário.
 
-### `gerar_relatorio_atividades(self)`
+#### `gerar_relatorio_atividades(self)`
 
 Gera um relatório detalhado das atividades realizadas por um funcionário, como empréstimos ou atualizações de registros.
 
 ## Descrição Detalhada dos Métodos
 
-### `__init__`
+#### `__init__`
 
 Este método construtor inicializa um novo funcionário, recebendo como parâmetros o ID do funcionário, nome, cargo e data de admissão.
 
-### `salvar`
+#### `salvar`
 
 Adiciona o funcionário ao sistema, permitindo sua atribuição a funções e responsabilidades.
 
-### `atualizar`
+#### `atualizar`
 
 Atualiza as informações de um funcionário existente, como cargo ou dados pessoais.
 
-### `deletar`
+#### `deletar`
 
 Exclui um funcionário do sistema. Caso o funcionário tenha responsabilidades ativas, como livros emprestados, a ação pode ser impedida.
 
-### `listar_todos`
+#### `listar_todos`
 
 Exibe uma lista completa de todos os funcionários registados, incluindo nome, cargo e data de admissão.
 
-### `atribuir_funcoes`
+#### `atribuir_funcoes`
 
 Atribui funções ou responsabilidades a um funcionário, como gerenciar empréstimos ou manter registros.
 
-### `gerar_relatorio_atividades`
+#### `gerar_relatorio_atividades`
 
 Gera um relatório detalhado sobre as atividades do funcionário, como empréstimos realizados, livros disponíveis e registros atualizados.
 
