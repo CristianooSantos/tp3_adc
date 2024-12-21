@@ -490,7 +490,27 @@ function LibraryBooks() {
       genre: 'Fábula Política',
       image: require('@site/static/img/nos.jpg').default,
     },
-    
+    {  
+      title: 'O Rei Leão',  
+      author: 'Roger Allers, Rob Minkoff',  
+      description: 'Uma história sobre a ascensão e queda de um governante, abordando temas como poder, responsabilidade e justiça. Embora seja um filme de animação, sua mensagem política é profunda e se alinha com o gênero de fábula política.',  
+      genre: 'Fábula Política',  
+      image: require('@site/static/img/rei_leao.jpg').default,
+    },
+    {
+      title: 'A Revolta de Atlas',  
+      author: 'Ayn Rand',  
+      description: 'Uma alegoria da luta contra o coletivismo e a opressão governamental, onde as figuras principais são os indivíduos que se rebelam contra um governo que controla e restringe suas liberdades.',  
+      genre: 'Fábula Política',  
+      image: require('@site/static/img/revolta_atlas.jpg').default,
+    },
+    {
+      title: 'Os Despossuídos',  
+      author: 'Ursula K. Le Guin',  
+      description: 'Uma obra que explora a dinâmica política e social de dois planetas opostos, abordando questões de liberdade, desigualdade e o contraste entre sistemas econômicos e políticos utópicos e distópicos.',  
+      genre: 'Fábula Política',  
+      image: require('@site/static/img/despossuídos.jpg').default,      
+    },
     {
       title: 'Dom Quixote',
       author: 'Miguel de Cervantes',
